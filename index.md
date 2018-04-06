@@ -1,37 +1,114 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+	<title>THE FINAL SALLY</title>
 
-You can use the [editor on GitHub](https://github.com/mcusick01/thefinalsally/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+	<script>
+	    // Open the Modal
+	    function openModal() {
+	      document.getElementById('myModal').style.display = "block";
+	    }
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+	    // Close the Modal
+	    function closeModal() {
+	      document.getElementById('myModal').style.display = "none";
+	    }
 
-### Markdown
+	    var slideIndex = 1;
+	    showSlides(slideIndex);
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+	    // Next/previous controls
+	    function plusSlides(n) {
+	      showSlides(slideIndex += n);
+	    }
 
-```markdown
-Syntax highlighted code block
+	    // Thumbnail image controls
+	    function currentSlide(n) {
+	      showSlides(slideIndex = n);
+	    }
 
-# Header 1
-## Header 2
-### Header 3
+	    function showSlides(n) {
+	      var i;
+	      var slides = document.getElementsByClassName("mySlides");
+	      var dots = document.getElementsByClassName("demo");
+	      var captionText = document.getElementById("caption");
 
-- Bulleted
-- List
+	      if (n > slides.length) {slideIndex = 1}
+	      if (n < 1) {slideIndex = slides.length}
 
-1. Numbered
-2. List
+	      for (i = 0; i < slides.length; i++) {
+	        slides[i].style.display = "none";
+	      }
 
-**Bold** and _Italic_ and `Code` text
+	      for (i = 0; i < dots.length; i++) {
+	        dots[i].className = dots[i].className.replace(" active", "");
+	      }
 
-[Link](url) and ![Image](src)
-```
+	      slides[slideIndex-1].style.display = "block";
+	      dots[slideIndex-1].className += " active";
+	      captionText.innerHTML = dots[slideIndex-1].alt;
+	    }
+	</script>
+	
+	<link rel="stylesheet" type="text/css" href="HomeStyles.css" />
+</head>
+<body>
+	<!-- header block -->
+	<div class="header">
+	    <img src="FinalSally_banner.png" alt="The Final Sally Game Home Page" class="header"/>
+	</div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+	<!-- body block -->
+	<div class="body">
+	    <!-- promo video -->
+	    <div id="promo">
+		<iframe width="1200" height="600" src="https://www.youtube.com/embed/iPPQsWJhA7I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	    </div>
 
-### Jekyll Themes
+	    <!-- video background -->
+	    <video autoplay muted loop id="background">
+  	    	<source src="bg1_Medium.mp4" type="video/mp4">
+	    </video>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mcusick01/thefinalsally/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+	    <div id="thumbs">
+	    	<img src="gameplay1_thumb.jpg" alt="" class="thumbnail" onclick="openModal();currentSlide(1)"/>
+	    	<img src="gameplay2_thumb.jpg" alt="" class="thumbnail" onclick="openModal();currentSlide(2)"/>
+	    	<img src="gameplay3_thumb.jpg" alt="" class="thumbnail" onclick="openModal();currentSlide(3)"/> 
+	    </div>
 
-### Support or Contact
+	    <div id="blockoftext">Coming SOON to a console near you</div>
+	    <div id="review">"&#9733;&#9733;&#9733;&#9733;&#9733;" - Quixotic Gaming</div>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+	    <div id="myModal" class="modal">
+	    	<span class="close cursor" onclick="closeModal()">&times;</span>
+  	    	<div class="modal-content">
+
+    	    	<div class="mySlides">
+     		    <img src="gameplay1_horse.gif" style="width:100%">
+    	   	</div>
+
+    	    	<div class="mySlides">
+      		    <img src="gameplay2_windmills.gif" style="width:100%">
+    	    	</div>
+
+    	    	<div class="mySlides">
+      		    <img src="gameplay3_travel.gif" style="width:100%">
+    	    	</div>	    
+
+	    	<!-- Next/previous controls -->
+    	    	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    	    	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    	    	<!-- Caption text -->
+    	    	<div class="caption-container">
+      	    	    <p id="caption"></p>
+    	    	</div>
+	    </div> <!-- end modal div -->	    
+	</div>    
+
+	<!-- footer/contact block -->
+	<div class="footer">
+	    <img src="FinalSally_footer.png" alt="Coming this Summer 2018" class="footer"/>
+	</div>
+</body>
+</html>
