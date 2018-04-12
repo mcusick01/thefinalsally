@@ -17,7 +17,7 @@ body {
     body { width:100%; }
 }
 
-/* Mobile */
+/* Mobile Portrait */
 @media screen and (max-width: 400px) {
     body { width: 100%; }
 }
