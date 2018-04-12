@@ -65,9 +65,9 @@ img.thumbnail {
 
 /* div holding the thumbnails */
 #thumbs {
-    position:relative;
-   /* top: 150%;
-    left: 65%; */
+    position: absolute;
+    top: 150%;
+    left: 65%; 
     z-index:1;
 }
 
