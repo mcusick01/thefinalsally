@@ -68,13 +68,13 @@ img.thumbnail {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /*position: absolute;
-    top: 200px;
-    left: 65%; 
-    z-index:1;*/
 }
 
-#blockoftext {
+#blockoftext, #review {
+    display: flex;
+}
+
+/*#blockoftext {
     font-family: 'Fjalla One';
     font-size: 98px;
     position: absolute;
@@ -92,7 +92,7 @@ img.thumbnail {
     top: 250%;
     left: 25%;
     z-index: 1;
-}
+}*/
 
 /*Gallery Styles*/
 .row > .column {
