@@ -70,7 +70,7 @@ img.thumbnail {
     justify-content: space-evenly;
 }
 
-#pageText {
+#section2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
