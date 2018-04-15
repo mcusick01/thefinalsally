@@ -70,8 +70,10 @@ img.thumbnail {
     justify-content: space-evenly;
 }
 
-#blockoftext, #review {
+#pageText {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /*#blockoftext {
