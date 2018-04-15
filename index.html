@@ -70,46 +70,48 @@
 	    </div>
 
 	    <!-- video background -->
-	    <video autoplay muted loop id="background">
-  	    	<source src="bg1_Medium.mp4" type="video/mp4">
-	    </video>
+	    <div id="section2">
+		    <video autoplay muted loop id="background">
+			<source src="bg1_Medium.mp4" type="video/mp4">
+		    </video>
 
-	    <div id="thumbs">
-	    	<img src="gameplay1_thumb.jpg" alt="" class="thumbnail" onclick="openModal();currentSlide(1)"/>
-	    	<img src="gameplay2_thumb.jpg" alt="" class="thumbnail" onclick="openModal();currentSlide(2)"/>
-	    	<img src="gameplay3_thumb.jpg" alt="" class="thumbnail" onclick="openModal();currentSlide(3)"/> 
+		    <div id="thumbs">
+			<img src="gameplay1_thumb.jpg" alt="" class="thumbnail" onclick="openModal();currentSlide(1)"/>
+			<img src="gameplay2_thumb.jpg" alt="" class="thumbnail" onclick="openModal();currentSlide(2)"/>
+			<img src="gameplay3_thumb.jpg" alt="" class="thumbnail" onclick="openModal();currentSlide(3)"/> 
+		    </div>
+
+		    <div id="pageText">
+			<div id="blockoftext">Coming SOON to a console near you</div>
+			<div id="review">"&#9733;&#9733;&#9733;&#9733;&#9733;" - Quixotic Gaming</div>
+		    </div>
+
+		    <div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+			<div class="mySlides">
+			    <img src="gameplay1_horse.gif" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+			    <img src="gameplay2_windmills.gif" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+			    <img src="gameplay3_travel.gif" style="width:100%">
+			</div>	    
+
+			<!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Caption text -->
+			<div class="caption-container">
+			    <p id="caption"></p>
+			</div>
+		    </div> <!-- end modal div -->
 	    </div>
-
-	    <div id="pageText">
-	   	<div id="blockoftext">Coming SOON to a console near you</div>
-	   	<div id="review">"&#9733;&#9733;&#9733;&#9733;&#9733;" - Quixotic Gaming</div>
-	    </div>
-
-	    <div id="myModal" class="modal">
-	    	<span class="close cursor" onclick="closeModal()">&times;</span>
-  	    	<div class="modal-content">
-
-    	    	<div class="mySlides">
-     		    <img src="gameplay1_horse.gif" style="width:100%">
-    	   	</div>
-
-    	    	<div class="mySlides">
-      		    <img src="gameplay2_windmills.gif" style="width:100%">
-    	    	</div>
-
-    	    	<div class="mySlides">
-      		    <img src="gameplay3_travel.gif" style="width:100%">
-    	    	</div>	    
-
-	    	<!-- Next/previous controls -->
-    	    	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    	    	<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    	    	<!-- Caption text -->
-    	    	<div class="caption-container">
-      	    	    <p id="caption"></p>
-    	    	</div>
-	    </div> <!-- end modal div -->	    
 	</div>    
 
 	<!-- footer/contact block -->
