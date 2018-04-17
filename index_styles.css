@@ -56,7 +56,7 @@ img.thumbnail {
     display: flex;
     position: absolute;
     top: 150%;
-    left: 55%;
+    left: 77%;
     flex-direction: column;
     justify-content: space-evenly;
     z-index: 100;
