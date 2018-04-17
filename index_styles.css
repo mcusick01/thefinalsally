@@ -58,6 +58,7 @@ img.thumbnail {
     left: 65%;
     flex-direction: column;
     justify-content: space-evenly;
+    z-index: 100;
 }
 
 #section2 {
