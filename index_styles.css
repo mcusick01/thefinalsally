@@ -29,7 +29,7 @@ div.body {
 }
 
 #background {
-   background-size: 100%;
+   background-size: 100% 100%;
    opacity: 0.4;
    z-index: -1
 }
@@ -55,6 +55,7 @@ img.thumbnail {
     display: flex;
     position: absolute;
     top: 50%;
+    left: 65%;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -162,6 +163,10 @@ img.thumbnail {
 }
 
 /* Position the "next button" to the right */
+.prev {
+    left: 0;
+}
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
