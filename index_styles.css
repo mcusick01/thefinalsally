@@ -83,7 +83,8 @@ img.thumbnail {
     display: flex;
     position: absolute;
     top: 250%;
-    left: 5%;
+    left: 50%;
+    right: 50%;
     font-family: 'Fjalla One';
     font-size: 48px;
     align-items: flex-end;
