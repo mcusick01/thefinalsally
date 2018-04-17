@@ -48,13 +48,14 @@ img.thumbnail {
     margin-top: 15px;
     margin-bottom: 15px; 
     opacity: 0.7;
+    z-index: 100;
 }
 
 /* div holding the thumbnails */
 #thumbs {
     display: flex;
     position: absolute;
-    top: 75%;
+    top: 100%;
     left: 65%;
     flex-direction: column;
     justify-content: space-evenly;
