@@ -55,7 +55,6 @@ img.thumbnail {
     display: flex;
     position: absolute;
     top: 50%;
-    bottom: 50%;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -70,6 +69,7 @@ img.thumbnail {
     font-family: 'Fjalla One';
     font-size: 98px;
     align-items: flex-start;
+    z-index: 100;
 }
 
 #review {
@@ -77,27 +77,8 @@ img.thumbnail {
     font-family: 'Fjalla One';
     font-size: 48px;
     align-items: flex-end;
+    z-index: 100;
 }
-
-/*#blockoftext {
-    font-family: 'Fjalla One';
-    font-size: 98px;
-    position: absolute;
-    top: 175%;
-    left: 5%;
-    right: 40%;
-    z-index: 1;
-    float: left;
-}
-
-#review {
-    font-family: 'Fjalla One';
-    font-size: 48px;
-    position: absolute;
-    top: 250%;
-    left: 25%;
-    z-index: 1;
-}*/
 
 /*Gallery Styles*/
 .row > .column {
