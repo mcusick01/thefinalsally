@@ -81,11 +81,11 @@ img.thumbnail {
 
 #communitylink {
     position: absolute;
-    top: 180%;
+    top: 200%;
     left: 5%;
     z-index: 100;
     font-family: 'Fjalla One';
-    font-size: 98px;
+    font-size: 48px;
 }
 
 #review {
