@@ -53,7 +53,9 @@ img.thumbnail {
 /* div holding the thumbnails */
 #thumbs {
     display: flex;
-    position: absolute: 50%;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
     flex-direction: column;
     justify-content: space-evenly;
 }
