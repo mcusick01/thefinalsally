@@ -69,6 +69,10 @@ img.thumbnail {
 
 #blockoftext {
     display: flex;
+    position: absolute;
+    top: 150%;
+    left: 10%;
+    right: 65%;
     font-family: 'Fjalla One';
     font-size: 98px;
     align-items: flex-start;
