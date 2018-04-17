@@ -82,7 +82,8 @@ img.thumbnail {
 #review {
     display: flex;
     position: absolute;
-    top: 200%;
+    top: 250%;
+    left: 5%;
     font-family: 'Fjalla One';
     font-size: 48px;
     align-items: flex-end;
