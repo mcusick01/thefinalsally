@@ -71,8 +71,8 @@ img.thumbnail {
     display: flex;
     position: absolute;
     top: 150%;
-    left: 10%;
-    right: 65%;
+    left: 5%;
+    right: 50%;
     font-family: 'Fjalla One';
     font-size: 98px;
     align-items: flex-start;
