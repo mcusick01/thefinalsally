@@ -173,7 +173,7 @@ img.thumbnail {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: 100%;
+  width: auto;
   padding: 16px;
   margin-top: -50px;
   color: white;
